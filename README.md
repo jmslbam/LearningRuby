@@ -3,6 +3,17 @@
 Code when learning Ruby.  
 All code is homebrewn on Windows XP. Installation was peace of cake. Not a lie ;)  
 
+# How to use
+## wk1/myfirstruby.rb
+
+Choose from commandline (currently with error)  
+`wk1/myfirstruby.rb`   
+
+or   
+
+Choose from commandline with an an argument   
+`wk1/myfirstruby.rb 0`  
+
 # Questions about Ruby
 - Why include `require 'rubygems'`  
 
