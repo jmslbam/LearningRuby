@@ -39,12 +39,12 @@ def getUrl(items)
   #puts @i.class
   if not @i.nil?
     puts 'You have passed the following argument: "' + @i.to_s + '"'
-    i = @i.to_i
+    i = @i
   else
-    puts 'No args passed'
     puts 'Please enter a number from the list'
-    i = gets.chomp || 'http://www.jaimemartinez.nl'
+    i = gets.chomp
   end
+  i = i.to_i
 
   #STDOUT.flush
   if items[i]
@@ -66,9 +66,9 @@ def openUrl(url)
     puts "Opening the url #{url}"
 
     #Use default browser
-    #cmd = 'start' + url
+    #cmd = 'start ' + url
     #system(cmd)
-    #puts `start #{url}`
+    puts `start #{url}`
     puts 'Have fun!'
   else 
     puts 'Please try again'
