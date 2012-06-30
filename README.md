@@ -23,8 +23,8 @@ Because of the version. 1.8 needs the crowngems ;)
 - `&&` and `'and'`  
 Could you explain a bit more about the difference of && and 'and'
 
-# `@`  
-What is the `@`?
+
+# What is the @?
 I think `@` is a variable with a scope so you can use it in other mehthods.
 
 # Resources
