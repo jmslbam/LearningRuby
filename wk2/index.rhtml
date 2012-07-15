@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Learning links</title>
+</head>
+<body>
+<h1>Some links for light reading</h1>
+<ul>
+<% links.each do |link| %>
+	<li><a href="<%= link.url %>" target="_blank"><%= link.text %></a></li>
+<% end %>
+</ul>
+</body>
+</html
