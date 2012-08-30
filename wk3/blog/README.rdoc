@@ -1,0 +1,4 @@
+== Welcome to LightReading
+
+Easy install all gems instead of piece by piece after every error with `gem bundle` 
+Rename a generated controller links > link
