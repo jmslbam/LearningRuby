@@ -1,0 +1,14 @@
+<div class="widget">
+  <h3 class="title">Some links for light reading</h3>
+  
+  <% if @links %>
+    <ul>
+    <% @links.each do |link| %>
+      <li><a href="<%= link.url %>" target="_blank"><%= link.text %></a></li>
+    <% end %>
+    </ul>
+  <% else %>
+    No links to read...
+  <% end %>
+
+</div>
