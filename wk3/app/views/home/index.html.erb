@@ -2,4 +2,6 @@
   Scrapper overview
 <% end %>
 <h1>Home#index</h1>
+<%= debug @links %>
+
 <%= render :partial => "links/widget", :locals => { :links => @links } %>

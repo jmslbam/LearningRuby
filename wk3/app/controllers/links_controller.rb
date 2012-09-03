@@ -2,6 +2,7 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
+    #@links   = Scraper.new('cache.html').collect
     @links = Link.all
 
     respond_to do |format|
