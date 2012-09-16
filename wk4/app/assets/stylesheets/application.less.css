@@ -1,0 +1,13 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background: #fff;
+	color:#ccc;
+}
+p, h1, h2, h3, h4 {
+	padding:0 0 .5em 0;
+}
+
+rails generate refinery:engine client name:string logo:image descripition:text
