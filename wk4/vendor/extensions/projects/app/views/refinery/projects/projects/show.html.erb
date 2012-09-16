@@ -3,36 +3,28 @@
 <% end %>
 
 <% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @project.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Releasedate</h1>
-    <p>
-      <%=raw @project.releasedate %>
-    </p>
-  </section>
-  <section>
-    <h1>Thumbnail</h1>
-    <p>
-      <%= image_fu @project.thumbnail, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @project.description %>
-    </p>
-  </section>
+  <h2><%=raw @project.name %></h2>
+  
+  <h2>Releasedate</h2>
+  <time>
+    <%=raw @project.releasedate %>
+  </time>
+  
+  <h2>Thumbnail</h2>
+  <p>
+    <%= image_fu @project.thumbnail, nil %>
+  </p>
+
+  <h2>Description</h2>
+  <p>
+    <%=raw @project.description %>
+  </p>
 <% end %>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="projects">
+<%=raw content_for :side_body do %>
+  <aside class="aside">
+    <h3><%= t('.other') %></h3>
+    <ul class="projects">
       <% @projects.each do |project| %>
         <li>
           <%= link_to project.name, refinery.projects_project_path(project) %>

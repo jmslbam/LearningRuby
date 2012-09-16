@@ -3,30 +3,20 @@
 <% end %>
 
 <% content_for :body do %>
-  <section>
-    <h1>Name</h1>
-    <p>
-      <%=raw @client.name %>
-    </p>
-  </section>
-  <section>
-    <h1>Logo</h1>
-    <p>
-      <%= image_fu @client.logo, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Descripition</h1>
-    <p>
-      <%=raw @client.descripition %>
-    </p>
-  </section>
+  <h2><%=raw @client.name %></h2>
+
+  <h2>Logo</h2>
+  <%= image_fu @client.logo, nil %>
+  <h2>Descripition</h2>
+  <p>
+    <%=raw @client.descripition %>
+  </p>
 <% end %>
 
 <% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="clients">
+  <aside class="aside">
+    <h3><%= t('.other') %></h3>
+    <ul class="clients">
       <% @clients.each do |client| %>
         <li>
           <%= link_to client.name, refinery.clients_client_path(client) %>
