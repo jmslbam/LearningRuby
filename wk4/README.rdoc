@@ -3,12 +3,13 @@ Create 2 contenttypes
 == Overwriting the templates
 
 === Used overwrites
-rake refinery:override view=layouts/application
-rake refinery:override view=refinery/_html_tag
+`rake refinery:override view=layouts/application`  
+`rake refinery:override view=refinery/_html_tag`
   
-Still how to overwrite the part in _content_page.html.erb?
+Still reseraching how to overwrite the parts in `_content_page.html.erb`?  
+https://github.com/jmslbam/LearningRuby/blob/master/wk4/app/views/refinery/_content_page.html.erb  
 
 === More overwrite?
-https://github.com/refinery/refinerycms/tree/master/core/app/views
-https://gist.github.com/2502881
-http://refinerycms.com/guides/overriding-views
+https://github.com/refinery/refinerycms/tree/master/core/app/views  
+https://gist.github.com/2502881  
+http://refinerycms.com/guides/overriding-views  
